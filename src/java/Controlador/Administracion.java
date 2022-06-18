@@ -230,6 +230,7 @@ public class Administracion extends HttpServlet {
     protected void pag_perfil(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ListarPerfil(request, response);
     }
+
     protected void pag_cargo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ListarCargo(request, response);
     }
@@ -293,6 +294,7 @@ public class Administracion extends HttpServlet {
         }
         getServletContext().getRequestDispatcher("/modificarPerfil.jsp").forward(request, response);
     }
+
     protected void pag_actualizarcargo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idcargo = request.getParameter("idmod");
         System.out.println("Id Cargo: " + idcargo);
@@ -307,6 +309,7 @@ public class Administracion extends HttpServlet {
         }
         getServletContext().getRequestDispatcher("/modificarCargo.jsp").forward(request, response);
     }
+
     protected void pag_actualizarcursocompetencia(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idcursocompetencia = request.getParameter("idmod");
         System.out.println("Id Curso Competencia: " + idcursocompetencia);
@@ -471,6 +474,7 @@ public class Administracion extends HttpServlet {
         getServletContext().getRequestDispatcher("/pag_administracion_perfiles.jsp").forward(request, response);
 
     }
+
     protected void ListarCargo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession(true);
@@ -484,6 +488,7 @@ public class Administracion extends HttpServlet {
         getServletContext().getRequestDispatcher("/pag_administracion_cargos.jsp").forward(request, response);
 
     }
+
     protected void ListarCursoCompetencia(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession(true);
@@ -575,6 +580,7 @@ public class Administracion extends HttpServlet {
         ListarCiclo(request, response);
 
     }
+
     protected void AgregarPerfil(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String mensaje = "";
 
@@ -598,6 +604,7 @@ public class Administracion extends HttpServlet {
         ListarPerfil(request, response);
 
     }
+
     protected void AgregarCargo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String mensaje = "";
 
@@ -621,6 +628,7 @@ public class Administracion extends HttpServlet {
         ListarCargo(request, response);
 
     }
+
     protected void AgregarCursoCompetencia(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String mensaje = "";
 
@@ -725,7 +733,7 @@ public class Administracion extends HttpServlet {
         ListarCiclo(request, response);
 
     }
-    
+
     protected void EliminarPerfil(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String mensaje = "";
@@ -747,6 +755,7 @@ public class Administracion extends HttpServlet {
         ListarPerfil(request, response);
 
     }
+
     protected void EliminarCargo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String mensaje = "";
@@ -768,6 +777,7 @@ public class Administracion extends HttpServlet {
         ListarCargo(request, response);
 
     }
+
     protected void EliminarCursoCompetencia(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String mensaje = "";
@@ -879,6 +889,7 @@ public class Administracion extends HttpServlet {
         ListarCiclo(request, response);
 
     }
+
     protected void Actualizarperfil(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String mensaje = "";
@@ -908,6 +919,7 @@ public class Administracion extends HttpServlet {
         ListarPerfil(request, response);
 
     }
+
     protected void ActualizarCargo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String mensaje = "";
@@ -937,6 +949,7 @@ public class Administracion extends HttpServlet {
         ListarCargo(request, response);
 
     }
+
     protected void ActualizarCursoCompetencia(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String mensaje = "";
